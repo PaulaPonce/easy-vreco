@@ -70,4 +70,4 @@ function initMap(){
 	}
 	directionsDisplay.setMap(map);
 }
-initMap();
+
