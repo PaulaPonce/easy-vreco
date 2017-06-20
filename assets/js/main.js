@@ -19,11 +19,13 @@ function initMap(){
 	var geo_succes = function(position){
 		latitude = position.coords.latitude;
 		longitude = position.coords.longitude;
-
+		
+		var image = "https://maps.google.com/mapfiles/kml/shapes/";
 		var miUbicacion = new google.maps.Marker({
 			position: {lat:latitude, lng:longitude},
 			animation: google.maps.Animation.DROP,
-			map: map
+			map: map,
+			icon: image + "cycling.png"
 		});
 
 		map.setZoom(17);
@@ -67,6 +69,5 @@ function initMap(){
 		});
 	}
 	directionsDisplay.setMap(map);
-	
 }
 initMap();

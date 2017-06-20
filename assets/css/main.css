@@ -29,6 +29,9 @@ button{
 }
 
 button:hover, button:focus{
+	color: #faae27;
+	background-color: white;
+	border: 1px solid #faae27;
 	outline: 0;
 }
 
